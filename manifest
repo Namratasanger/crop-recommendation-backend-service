@@ -1,0 +1,4 @@
+applications:
+  - name: crop-recommendation-backend
+    memory: 512M
+    path: .

@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: crop-backend-api
+  name: crop-backend-api
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: crop-backend-api
+  template:
+    metadata:
+      labels:
+        app: crop-backend-api
+    spec:
+      containers:
+        - image: uk.icr.io/nikhil/crop-backend-api
+          imagePullPolicy: Always
+          name: crop-backend-api
+          ports:
+            - containerPort: 8080
+              name: http
+              protocol: TCP
+          livenessProbe:
+            failureThreshold: 3
+            httpGet:
+              path: /actuator/info
+              port: 8080
+              scheme: HTTP
+            initialDelaySeconds: 0
+            periodSeconds: 30
+            successThreshold: 1
+            timeoutSeconds: 10
+          readinessProbe:
+            failureThreshold: 3
+            httpGet:
+              path: /actuator/health
+              port: 8080
+              scheme: HTTP
+            initialDelaySeconds: 0
+            periodSeconds: 30
+            successThreshold: 1
+            timeoutSeconds: 10

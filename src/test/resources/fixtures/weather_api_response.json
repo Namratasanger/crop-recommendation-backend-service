@@ -1,0 +1,33 @@
+{
+  "location": {
+    "name": "Gunra",
+    "region": "Gujarat",
+    "country": "India",
+    "lat": 22,
+    "lon": 70,
+    "tz_id": "Asia/Kolkata",
+    "localtime_epoch": 1618067515,
+    "localtime": "2021-04-10 20:41"
+  },
+  "current": {
+    "last_updated_epoch": 1618063200,
+    "last_updated": "2021-04-10 19:30",
+    "temp_c": 38,
+    "temp_f": 100.4,
+    "is_day": 0,
+    "condition": {
+      "text": "Sunny",
+      "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png",
+      "code": 1000
+    },
+    "wind_mph": 11.4,
+    "wind_kph": 18.4,
+    "wind_degree": 260,
+    "wind_dir": "W",
+    "humidity": 11,
+    "cloud": 0,
+    "feelslike_c": 37.1,
+    "feelslike_f": 98.8,
+    "uv": 9
+  }
+}

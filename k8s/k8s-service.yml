@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: crop-backend-api
+    type: microservice
+    tier: backend
+  name: crop-backend-api
+spec:
+  ports:
+    - name: http
+      port: 8080
+      targetPort: 8080
+  selector:
+    app: crop-backend-api
+  type: NodePort
+

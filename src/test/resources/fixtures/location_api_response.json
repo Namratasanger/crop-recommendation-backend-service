@@ -1,0 +1,66 @@
+{
+  "documentation": "https://opencagedata.com/api",
+  "licenses": [
+    {
+      "name": "see attribution guide",
+      "url": "https://opencagedata.com/credits"
+    }
+  ],
+  "rate": {
+    "limit": 2500,
+    "remaining": 2498,
+    "reset": 1618099200
+  },
+  "results": [
+    {
+      "bounds": {
+        "northeast": {
+          "lat": 23.0024871,
+          "lng": 72.5934167
+        },
+        "southwest": {
+          "lat": 22.9983261,
+          "lng": 72.5931495
+        }
+      },
+      "components": {
+        "ISO_3166-1_alpha-2": "IN",
+        "ISO_3166-1_alpha-3": "IND",
+        "_category": "road",
+        "_type": "road",
+        "city": "Ahmedabad",
+        "continent": "Asia",
+        "country": "India",
+        "country_code": "in",
+        "county": "Ahmadabad City Taluka",
+        "postcode": "380001",
+        "road": "unnamed road",
+        "road_type": "secondary",
+        "state": "Gujarat",
+        "state_code": "GJ",
+        "state_district": "Ahmedabad District",
+        "suburb": "Kankaria"
+      },
+      "confidence": 9,
+      "formatted": "unnamed road, Kankaria, Ahmedabad - 380001, Gujarat, India",
+      "geometry": {
+        "lat": 22.9989907,
+        "lng": 72.5931834
+      }
+    }
+  ],
+  "status": {
+    "code": 200,
+    "message": "OK"
+  },
+  "stay_informed": {
+    "blog": "https://blog.opencagedata.com",
+    "twitter": "https://twitter.com/OpenCage"
+  },
+  "thanks": "For using an OpenCage API",
+  "timestamp": {
+    "created_http": "Sat, 10 Apr 2021 16:44:41 GMT",
+    "created_unix": 1618073081
+  },
+  "total_results": 1
+}
